@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="popup.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="popup">
+        <p class="popup_title">Click anywhere to get the details</p>
+        <div class="popup-details">
+          <span class="popup-details__span"
+            ><strong>FONT</strong> <span class="value" id="font_fam"></span
+          ></span>
+          <span class="popup-details__span"
+            ><strong>SIZE</strong> <span class="value" id="font_size"></span
+          ></span>
+          <span class="popup-details__span"
+            ><strong>COLOR</strong> <span class="value" id="font_col"></span
+          ></span>
+          <span class="popup-details__span"
+            ><strong>BG</strong> <span class="value" id="bg_col"></span
+          ></span>
+        </div>
+        <div class="snackbar" id="snackbar">
+          <p>Copied Successfully!!</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

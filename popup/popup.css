@@ -1,0 +1,93 @@
+
+:root {
+    --background: #fff;
+    --font-color: #292929;
+    --watermark-color: #DDE3FF;
+    --hover-color: #fff;
+    --snackbar-background: rgb(133, 255, 174);
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.popup {
+  height: auto;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+}
+
+.popup_title {
+  width: 80%;
+  outline: none;
+  border: none;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin: 2% auto;
+  font-weight: 500;
+}
+
+#btn:hover {
+  cursor: pointer;
+}
+
+.popup-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-details__span {
+  /* position: absolute; */
+  position: relative;
+  width: 494px;
+  margin-top: 20px;
+  text-align: end;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 149px;
+  color: var(--watermark-color);
+}
+
+.value {
+  font-size: 5vw;
+  font-weight: 700;
+  color: var(--font-color);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.value:hover {
+  cursor: pointer;
+  color: var(--hover-color);
+  background: var(--font-color);
+  padding: 1rem;
+}
+
+.snackbar {
+  width: 100%;
+  height: 10%;
+  font-size: 1rem;
+  font-weight: 700;
+  position: fixed;
+  background-color: var(--snackbar-background);
+  text-align: center;
+  display: none;
+  bottom: 0;
+}

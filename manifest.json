@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Picker Extension",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "html": ["popup/popup.html"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["tabs"],
+  "icons": { "16": "icon.png", "48": "icon.png", "128": "icon.png" },
+
+  "browser_action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Picker"
+  }
+}
